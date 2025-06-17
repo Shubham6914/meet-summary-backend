@@ -1,0 +1,2 @@
+# folder or files which we do not want to track in git
+myvenv/
