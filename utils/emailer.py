@@ -13,6 +13,10 @@ SMTP_PORT = int(os.getenv("SMTP_PORT", 587))
 SMTP_USER = os.getenv("SMTP_USER")
 SMTP_PASSWORD = os.getenv("SMTP_PASSWORD")
 
+print("SMTP_USER:", SMTP_USER)
+print("SMTP_PASSWORD:", SMTP_PASSWORD)
+
+
 async def send_summary_email(to_emails: list, summary_text: str):
     subject = "📝 Meeting Summary"
     
